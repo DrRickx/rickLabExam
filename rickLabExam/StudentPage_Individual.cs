@@ -68,6 +68,7 @@ namespace rickLabExam
                     while (reader.Read())
                     {
                         // Populate the controls with the student's data
+                        lblStudentId.Text = reader["studentId"].ToString();
                         lblStudentName.Text = reader["fullName"].ToString();
                         lblAddress.Text = reader["houseNo"].ToString() + " " + reader["brgyName"].ToString() + ", " + reader["municipality"].ToString() + ", " + reader["province"].ToString() + ", Region " + reader["region"].ToString() + ", " + reader["country"].ToString();
                         lblBirthDate.Text = reader["birthdate"].ToString();

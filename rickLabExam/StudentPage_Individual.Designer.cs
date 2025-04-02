@@ -39,13 +39,15 @@
             nicknameLabel = new Label();
             courseNameLabel = new Label();
             yearLvlLabel = new Label();
+            studentIdLabel = new Label();
+            lblStudentId = new Label();
             SuspendLayout();
             // 
             // lblStudentName
             // 
             lblStudentName.AutoSize = true;
             lblStudentName.Font = new Font("Century Gothic", 9F);
-            lblStudentName.Location = new Point(167, 26);
+            lblStudentName.Location = new Point(167, 56);
             lblStudentName.Name = "lblStudentName";
             lblStudentName.Size = new Size(136, 20);
             lblStudentName.TabIndex = 0;
@@ -55,7 +57,7 @@
             // 
             lblStdName.AutoSize = true;
             lblStdName.Font = new Font("Century Gothic", 9F);
-            lblStdName.Location = new Point(28, 26);
+            lblStdName.Location = new Point(28, 56);
             lblStdName.Name = "lblStdName";
             lblStdName.Size = new Size(83, 20);
             lblStdName.TabIndex = 1;
@@ -65,7 +67,7 @@
             // 
             lblAddress.AutoSize = true;
             lblAddress.Font = new Font("Century Gothic", 9F);
-            lblAddress.Location = new Point(167, 57);
+            lblAddress.Location = new Point(167, 87);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(91, 20);
             lblAddress.TabIndex = 2;
@@ -75,7 +77,7 @@
             // 
             lblBirthDate.AutoSize = true;
             lblBirthDate.Font = new Font("Century Gothic", 9F);
-            lblBirthDate.Location = new Point(167, 88);
+            lblBirthDate.Location = new Point(167, 118);
             lblBirthDate.Name = "lblBirthDate";
             lblBirthDate.Size = new Size(99, 20);
             lblBirthDate.TabIndex = 3;
@@ -85,7 +87,7 @@
             // 
             lblAge.AutoSize = true;
             lblAge.Font = new Font("Century Gothic", 9F);
-            lblAge.Location = new Point(167, 119);
+            lblAge.Location = new Point(167, 149);
             lblAge.Name = "lblAge";
             lblAge.Size = new Size(64, 20);
             lblAge.TabIndex = 4;
@@ -95,7 +97,7 @@
             // 
             lblStudentNumber.AutoSize = true;
             lblStudentNumber.Font = new Font("Century Gothic", 9F);
-            lblStudentNumber.Location = new Point(167, 150);
+            lblStudentNumber.Location = new Point(167, 180);
             lblStudentNumber.Name = "lblStudentNumber";
             lblStudentNumber.Size = new Size(156, 20);
             lblStudentNumber.TabIndex = 5;
@@ -105,7 +107,7 @@
             // 
             lblEmailAddress.AutoSize = true;
             lblEmailAddress.Font = new Font("Century Gothic", 9F);
-            lblEmailAddress.Location = new Point(167, 181);
+            lblEmailAddress.Location = new Point(167, 211);
             lblEmailAddress.Name = "lblEmailAddress";
             lblEmailAddress.Size = new Size(132, 20);
             lblEmailAddress.TabIndex = 6;
@@ -115,7 +117,7 @@
             // 
             lblGuardianName.AutoSize = true;
             lblGuardianName.Font = new Font("Century Gothic", 9F);
-            lblGuardianName.Location = new Point(167, 212);
+            lblGuardianName.Location = new Point(167, 242);
             lblGuardianName.Name = "lblGuardianName";
             lblGuardianName.Size = new Size(150, 20);
             lblGuardianName.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             lblHobbies.AutoSize = true;
             lblHobbies.Font = new Font("Century Gothic", 9F);
-            lblHobbies.Location = new Point(167, 243);
+            lblHobbies.Location = new Point(167, 273);
             lblHobbies.Name = "lblHobbies";
             lblHobbies.Size = new Size(92, 20);
             lblHobbies.TabIndex = 8;
@@ -135,7 +137,7 @@
             // 
             lblNickname.AutoSize = true;
             lblNickname.Font = new Font("Century Gothic", 9F);
-            lblNickname.Location = new Point(167, 274);
+            lblNickname.Location = new Point(167, 304);
             lblNickname.Name = "lblNickname";
             lblNickname.Size = new Size(107, 20);
             lblNickname.TabIndex = 9;
@@ -145,7 +147,7 @@
             // 
             lblCourse.AutoSize = true;
             lblCourse.Font = new Font("Century Gothic", 9F);
-            lblCourse.Location = new Point(167, 305);
+            lblCourse.Location = new Point(167, 335);
             lblCourse.Name = "lblCourse";
             lblCourse.Size = new Size(85, 20);
             lblCourse.TabIndex = 10;
@@ -155,7 +157,7 @@
             // 
             lblYear.AutoSize = true;
             lblYear.Font = new Font("Century Gothic", 9F);
-            lblYear.Location = new Point(167, 336);
+            lblYear.Location = new Point(167, 366);
             lblYear.Name = "lblYear";
             lblYear.Size = new Size(65, 20);
             lblYear.TabIndex = 11;
@@ -165,8 +167,8 @@
             // 
             addressLabel.AutoSize = true;
             addressLabel.Font = new Font("Century Gothic", 9F);
-            addressLabel.Location = new Point(28, 57);
-            addressLabel.Name = "label1";
+            addressLabel.Location = new Point(28, 87);
+            addressLabel.Name = "addressLabel";
             addressLabel.Size = new Size(71, 20);
             addressLabel.TabIndex = 12;
             addressLabel.Text = "Address:";
@@ -175,8 +177,8 @@
             // 
             birthDateLabel.AutoSize = true;
             birthDateLabel.Font = new Font("Century Gothic", 9F);
-            birthDateLabel.Location = new Point(28, 88);
-            birthDateLabel.Name = "label2";
+            birthDateLabel.Location = new Point(28, 118);
+            birthDateLabel.Name = "birthDateLabel";
             birthDateLabel.Size = new Size(79, 20);
             birthDateLabel.TabIndex = 13;
             birthDateLabel.Text = "Birthdate:";
@@ -185,8 +187,8 @@
             // 
             ageLabel.AutoSize = true;
             ageLabel.Font = new Font("Century Gothic", 9F);
-            ageLabel.Location = new Point(28, 119);
-            ageLabel.Name = "label3";
+            ageLabel.Location = new Point(28, 149);
+            ageLabel.Name = "ageLabel";
             ageLabel.Size = new Size(44, 20);
             ageLabel.TabIndex = 14;
             ageLabel.Text = "Age:";
@@ -195,8 +197,8 @@
             // 
             studentNumberLabel.AutoSize = true;
             studentNumberLabel.Font = new Font("Century Gothic", 9F);
-            studentNumberLabel.Location = new Point(28, 150);
-            studentNumberLabel.Name = "label4";
+            studentNumberLabel.Location = new Point(28, 180);
+            studentNumberLabel.Name = "studentNumberLabel";
             studentNumberLabel.Size = new Size(136, 20);
             studentNumberLabel.TabIndex = 15;
             studentNumberLabel.Text = "Contact Number:";
@@ -205,8 +207,8 @@
             // 
             emailAddressLabel.AutoSize = true;
             emailAddressLabel.Font = new Font("Century Gothic", 9F);
-            emailAddressLabel.Location = new Point(28, 181);
-            emailAddressLabel.Name = "label5";
+            emailAddressLabel.Location = new Point(28, 211);
+            emailAddressLabel.Name = "emailAddressLabel";
             emailAddressLabel.Size = new Size(112, 20);
             emailAddressLabel.TabIndex = 16;
             emailAddressLabel.Text = "Email Address:";
@@ -215,8 +217,8 @@
             // 
             guardianNameLabel.AutoSize = true;
             guardianNameLabel.Font = new Font("Century Gothic", 9F);
-            guardianNameLabel.Location = new Point(28, 212);
-            guardianNameLabel.Name = "label6";
+            guardianNameLabel.Location = new Point(28, 242);
+            guardianNameLabel.Name = "guardianNameLabel";
             guardianNameLabel.Size = new Size(126, 20);
             guardianNameLabel.TabIndex = 17;
             guardianNameLabel.Text = "Guardian Name";
@@ -225,8 +227,8 @@
             // 
             hobbiesLabel.AutoSize = true;
             hobbiesLabel.Font = new Font("Century Gothic", 9F);
-            hobbiesLabel.Location = new Point(28, 243);
-            hobbiesLabel.Name = "label7";
+            hobbiesLabel.Location = new Point(28, 273);
+            hobbiesLabel.Name = "hobbiesLabel";
             hobbiesLabel.Size = new Size(72, 20);
             hobbiesLabel.TabIndex = 18;
             hobbiesLabel.Text = "Hobbies:";
@@ -235,8 +237,8 @@
             // 
             nicknameLabel.AutoSize = true;
             nicknameLabel.Font = new Font("Century Gothic", 9F);
-            nicknameLabel.Location = new Point(28, 274);
-            nicknameLabel.Name = "label8";
+            nicknameLabel.Location = new Point(28, 304);
+            nicknameLabel.Name = "nicknameLabel";
             nicknameLabel.Size = new Size(87, 20);
             nicknameLabel.TabIndex = 19;
             nicknameLabel.Text = "Nickname:";
@@ -245,8 +247,8 @@
             // 
             courseNameLabel.AutoSize = true;
             courseNameLabel.Font = new Font("Century Gothic", 9F);
-            courseNameLabel.Location = new Point(28, 305);
-            courseNameLabel.Name = "label9";
+            courseNameLabel.Location = new Point(28, 335);
+            courseNameLabel.Name = "courseNameLabel";
             courseNameLabel.Size = new Size(65, 20);
             courseNameLabel.TabIndex = 20;
             courseNameLabel.Text = "Course:";
@@ -255,17 +257,38 @@
             // 
             yearLvlLabel.AutoSize = true;
             yearLvlLabel.Font = new Font("Century Gothic", 9F);
-            yearLvlLabel.Location = new Point(28, 336);
-            yearLvlLabel.Name = "label10";
+            yearLvlLabel.Location = new Point(28, 366);
+            yearLvlLabel.Name = "yearLvlLabel";
             yearLvlLabel.Size = new Size(45, 20);
             yearLvlLabel.TabIndex = 21;
             yearLvlLabel.Text = "Year:";
+            // 
+            // studentIdLabel
+            // 
+            studentIdLabel.AutoSize = true;
+            studentIdLabel.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            studentIdLabel.Location = new Point(28, 25);
+            studentIdLabel.Name = "studentIdLabel";
+            studentIdLabel.Size = new Size(88, 20);
+            studentIdLabel.TabIndex = 22;
+            studentIdLabel.Text = "Student ID:";
+            // 
+            // lblStudentId
+            // 
+            lblStudentId.AutoSize = true;
+            lblStudentId.Location = new Point(167, 25);
+            lblStudentId.Name = "lblStudentId";
+            lblStudentId.Size = new Size(50, 20);
+            lblStudentId.TabIndex = 23;
+            lblStudentId.Text = "**Student Id**";
             // 
             // StudentPage_Individual
             // 
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(464, 374);
+            ClientSize = new Size(464, 516);
+            Controls.Add(lblStudentId);
+            Controls.Add(studentIdLabel);
             Controls.Add(yearLvlLabel);
             Controls.Add(courseNameLabel);
             Controls.Add(nicknameLabel);
@@ -320,5 +343,7 @@
         private Label nicknameLabel;
         private Label courseNameLabel;
         private Label yearLvlLabel;
+        private Label studentIdLabel;
+        private Label lblStudentId;
     }
 }
