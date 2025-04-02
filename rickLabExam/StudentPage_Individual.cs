@@ -37,7 +37,28 @@ namespace rickLabExam
 
                 // Query to get student details by studentId
                 CMD.CommandType = CommandType.Text;
-                CMD.CommandText = "SELECT * FROM studentrecordtb WHERE studentId = @studentId";
+                CMD.CommandText = "SELECT " +
+                    "sr.studentId, " +
+                    "CONCAT(sr.firstName, ' ', sr.middleName, ' ', sr.lastName) AS fullName, " +
+                    "sr.houseNo," +
+                    "sr.brgyName," +
+                    "sr.municipality," +
+                    "sr.province," +
+                    "sr.region," +
+                    "sr.country," +
+                    "sr.birthdate," +
+                    "sr.age," +
+                    "sr.studContactNo," +
+                    "sr.emailAddress," +
+                    "CONCAT(sr.guardianFirstName, ' ', sr.guardianLastName) as guardianName," +
+                    "sr.hobbies," +
+                    "sr.nickname," +
+                    "c.courseName," +
+                    "y.yearLvl " +
+                    "FROM studentrecordtb sr " +
+                    "INNER JOIN coursetb c ON sr.courseId = c.courseId " +
+                    "INNER JOIN yeartb y ON sr.yearId = y.yearId " +
+                    "WHERE studentId = @studentId";
                 CMD.Parameters.AddWithValue("@studentId", studentId);
                 MySqlDataReader reader = CMD.ExecuteReader();
 
@@ -47,8 +68,17 @@ namespace rickLabExam
                     while (reader.Read())
                     {
                         // Populate the controls with the student's data
-                        lblStudentName.Text = reader["firstName"].ToString() + " " + reader["middleName"].ToString() + " " + reader["lastName"].ToString();
+                        lblStudentName.Text = reader["fullName"].ToString();
                         lblAddress.Text = reader["houseNo"].ToString() + " " + reader["brgyName"].ToString() + ", " + reader["municipality"].ToString() + ", " + reader["province"].ToString() + ", Region " + reader["region"].ToString() + ", " + reader["country"].ToString();
+                        lblBirthDate.Text = reader["birthdate"].ToString();
+                        lblAge.Text = reader["age"].ToString();
+                        lblStudentNumber.Text = reader["studContactNo"].ToString();
+                        lblEmailAddress.Text = reader["emailAddress"].ToString();
+                        lblGuardianName.Text = reader["guardianName"].ToString();
+                        lblHobbies.Text = reader["hobbies"].ToString();
+                        lblNickname.Text = reader["nickname"].ToString();
+                        lblCourse.Text = reader["courseName"].ToString();
+                        lblYear.Text = reader["yearLvl"].ToString();
                     }
                 }
                 else

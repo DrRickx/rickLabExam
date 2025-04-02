@@ -45,7 +45,6 @@ namespace rickLabExam
                 try
                 {
                     this.Con.Open();
-                    MessageBox.Show("Connection successful");
                 }
                 catch (Exception ex)
                 {
@@ -84,16 +83,6 @@ namespace rickLabExam
                 CMD.CommandType = CommandType.Text;
                 CMD.CommandText = "SELECT studentId, CONCAT(firstName, ' ', lastName, ' ', middleName) AS FullName FROM studentrecordtb";
                 Reader = CMD.ExecuteReader();
-
-                // Debugging: Check if the query returns rows
-                if (Reader.HasRows)
-                {
-                    MessageBox.Show("Data retrieved from database");
-                }
-                else
-                {
-                    MessageBox.Show("No data found");
-                }
 
                 DT.Clear();
                 DT.Load(Reader);
