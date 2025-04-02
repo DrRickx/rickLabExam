@@ -29,16 +29,16 @@
             lblNickname = new Label();
             lblCourse = new Label();
             lblYear = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
+            addressLabel = new Label();
+            birthDateLabel = new Label();
+            ageLabel = new Label();
+            studentNumberLabel = new Label();
+            emailAddressLabel = new Label();
+            guardianNameLabel = new Label();
+            hobbiesLabel = new Label();
+            nicknameLabel = new Label();
+            courseNameLabel = new Label();
+            yearLvlLabel = new Label();
             SuspendLayout();
             // 
             // lblStudentName
@@ -161,121 +161,121 @@
             lblYear.TabIndex = 11;
             lblYear.Text = "**Year**";
             // 
-            // label1
+            // addressLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 9F);
-            label1.Location = new Point(28, 57);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 20);
-            label1.TabIndex = 12;
-            label1.Text = "Address:";
+            addressLabel.AutoSize = true;
+            addressLabel.Font = new Font("Century Gothic", 9F);
+            addressLabel.Location = new Point(28, 57);
+            addressLabel.Name = "label1";
+            addressLabel.Size = new Size(71, 20);
+            addressLabel.TabIndex = 12;
+            addressLabel.Text = "Address:";
             // 
-            // label2
+            // birthDateLabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 9F);
-            label2.Location = new Point(28, 88);
-            label2.Name = "label2";
-            label2.Size = new Size(79, 20);
-            label2.TabIndex = 13;
-            label2.Text = "Birthdate:";
+            birthDateLabel.AutoSize = true;
+            birthDateLabel.Font = new Font("Century Gothic", 9F);
+            birthDateLabel.Location = new Point(28, 88);
+            birthDateLabel.Name = "label2";
+            birthDateLabel.Size = new Size(79, 20);
+            birthDateLabel.TabIndex = 13;
+            birthDateLabel.Text = "Birthdate:";
             // 
-            // label3
+            // ageLabel
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 9F);
-            label3.Location = new Point(28, 119);
-            label3.Name = "label3";
-            label3.Size = new Size(44, 20);
-            label3.TabIndex = 14;
-            label3.Text = "Age:";
+            ageLabel.AutoSize = true;
+            ageLabel.Font = new Font("Century Gothic", 9F);
+            ageLabel.Location = new Point(28, 119);
+            ageLabel.Name = "label3";
+            ageLabel.Size = new Size(44, 20);
+            ageLabel.TabIndex = 14;
+            ageLabel.Text = "Age:";
             // 
-            // label4
+            // studentNumberLabel
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 9F);
-            label4.Location = new Point(28, 150);
-            label4.Name = "label4";
-            label4.Size = new Size(136, 20);
-            label4.TabIndex = 15;
-            label4.Text = "Contact Number:";
+            studentNumberLabel.AutoSize = true;
+            studentNumberLabel.Font = new Font("Century Gothic", 9F);
+            studentNumberLabel.Location = new Point(28, 150);
+            studentNumberLabel.Name = "label4";
+            studentNumberLabel.Size = new Size(136, 20);
+            studentNumberLabel.TabIndex = 15;
+            studentNumberLabel.Text = "Contact Number:";
             // 
-            // label5
+            // emailAddressLabel
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 9F);
-            label5.Location = new Point(28, 181);
-            label5.Name = "label5";
-            label5.Size = new Size(112, 20);
-            label5.TabIndex = 16;
-            label5.Text = "Email Address:";
+            emailAddressLabel.AutoSize = true;
+            emailAddressLabel.Font = new Font("Century Gothic", 9F);
+            emailAddressLabel.Location = new Point(28, 181);
+            emailAddressLabel.Name = "label5";
+            emailAddressLabel.Size = new Size(112, 20);
+            emailAddressLabel.TabIndex = 16;
+            emailAddressLabel.Text = "Email Address:";
             // 
-            // label6
+            // guardianNameLabel
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Century Gothic", 9F);
-            label6.Location = new Point(28, 212);
-            label6.Name = "label6";
-            label6.Size = new Size(126, 20);
-            label6.TabIndex = 17;
-            label6.Text = "Guardian Name";
+            guardianNameLabel.AutoSize = true;
+            guardianNameLabel.Font = new Font("Century Gothic", 9F);
+            guardianNameLabel.Location = new Point(28, 212);
+            guardianNameLabel.Name = "label6";
+            guardianNameLabel.Size = new Size(126, 20);
+            guardianNameLabel.TabIndex = 17;
+            guardianNameLabel.Text = "Guardian Name";
             // 
-            // label7
+            // hobbiesLabel
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Century Gothic", 9F);
-            label7.Location = new Point(28, 243);
-            label7.Name = "label7";
-            label7.Size = new Size(72, 20);
-            label7.TabIndex = 18;
-            label7.Text = "Hobbies:";
+            hobbiesLabel.AutoSize = true;
+            hobbiesLabel.Font = new Font("Century Gothic", 9F);
+            hobbiesLabel.Location = new Point(28, 243);
+            hobbiesLabel.Name = "label7";
+            hobbiesLabel.Size = new Size(72, 20);
+            hobbiesLabel.TabIndex = 18;
+            hobbiesLabel.Text = "Hobbies:";
             // 
-            // label8
+            // nicknameLabel
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Century Gothic", 9F);
-            label8.Location = new Point(28, 274);
-            label8.Name = "label8";
-            label8.Size = new Size(87, 20);
-            label8.TabIndex = 19;
-            label8.Text = "Nickname:";
+            nicknameLabel.AutoSize = true;
+            nicknameLabel.Font = new Font("Century Gothic", 9F);
+            nicknameLabel.Location = new Point(28, 274);
+            nicknameLabel.Name = "label8";
+            nicknameLabel.Size = new Size(87, 20);
+            nicknameLabel.TabIndex = 19;
+            nicknameLabel.Text = "Nickname:";
             // 
-            // label9
+            // courseNameLabel
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Century Gothic", 9F);
-            label9.Location = new Point(28, 305);
-            label9.Name = "label9";
-            label9.Size = new Size(65, 20);
-            label9.TabIndex = 20;
-            label9.Text = "Course:";
+            courseNameLabel.AutoSize = true;
+            courseNameLabel.Font = new Font("Century Gothic", 9F);
+            courseNameLabel.Location = new Point(28, 305);
+            courseNameLabel.Name = "label9";
+            courseNameLabel.Size = new Size(65, 20);
+            courseNameLabel.TabIndex = 20;
+            courseNameLabel.Text = "Course:";
             // 
-            // label10
+            // yearLvlLabel
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Century Gothic", 9F);
-            label10.Location = new Point(28, 336);
-            label10.Name = "label10";
-            label10.Size = new Size(45, 20);
-            label10.TabIndex = 21;
-            label10.Text = "Year:";
+            yearLvlLabel.AutoSize = true;
+            yearLvlLabel.Font = new Font("Century Gothic", 9F);
+            yearLvlLabel.Location = new Point(28, 336);
+            yearLvlLabel.Name = "label10";
+            yearLvlLabel.Size = new Size(45, 20);
+            yearLvlLabel.TabIndex = 21;
+            yearLvlLabel.Text = "Year:";
             // 
             // StudentPage_Individual
             // 
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(464, 374);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(yearLvlLabel);
+            Controls.Add(courseNameLabel);
+            Controls.Add(nicknameLabel);
+            Controls.Add(hobbiesLabel);
+            Controls.Add(guardianNameLabel);
+            Controls.Add(emailAddressLabel);
+            Controls.Add(studentNumberLabel);
+            Controls.Add(ageLabel);
+            Controls.Add(birthDateLabel);
+            Controls.Add(addressLabel);
             Controls.Add(lblYear);
             Controls.Add(lblCourse);
             Controls.Add(lblNickname);
@@ -310,15 +310,15 @@
         private Label lblNickname;
         private Label lblCourse;
         private Label lblYear;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
+        private Label addressLabel;
+        private Label birthDateLabel;
+        private Label ageLabel;
+        private Label studentNumberLabel;
+        private Label emailAddressLabel;
+        private Label guardianNameLabel;
+        private Label hobbiesLabel;
+        private Label nicknameLabel;
+        private Label courseNameLabel;
+        private Label yearLvlLabel;
     }
 }
